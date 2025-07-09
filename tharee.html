@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. Thareefa | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: linear-gradient(to right, #c9ffbf, #ffafbd); color: #1f2937; line-height: 1.6; }
+    header { background: rgba(255, 255, 255, 0.95); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    nav { display: flex; justify-content: center; gap: 2rem; }
+    nav a { text-decoration: none; color: #333; font-weight: 600; position: relative; }
+    nav a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: #ff6ec4; transition: 0.3s; }
+    nav a:hover::after { width: 100%; }
+    .hero { padding: 4rem 1rem; text-align: center; background: linear-gradient(to right, #c9ffbf, #ffafbd); }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto; color: #374151; }
+    .btn { display: inline-block; background: #ff6ec4; color: #fff; padding: 0.8rem 1.8rem; border-radius: 25px; font-weight: 600; margin-top: 1.5rem; text-decoration: none; transition: 0.3s; }
+    .btn:hover { background: #d94da1; transform: translateY(-3px); }
+    section { padding: 4rem 1rem; max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 2rem; color: #1f2937; position: relative; }
+    .section-title::after { content: ''; width: 60px; height: 3px; background: #ff6ec4; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); border-radius: 2px; }
+    #about .container, #projects .container, #certificates .container, #contact .container { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; background: #fff; padding: 2rem; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    #about img, #projects img, #certificates img { width: 280px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    #about p, #projects p, #certificates p, #contact p { flex: 1; font-size: 1.1rem; color: #333; }
+    .contact-icon { font-size: 1.4rem; margin-right: 10px; color: #ff6ec4; }
+    #contact .container { flex-direction: column; align-items: center; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm M. Thareefa</h1>
+    <p>I'm a passionate Front-End Developer skilled in HTML, CSS, JavaScript & React. I love creating clean, user-friendly websites and smooth experiences.</p>
+    <a href="assets/thareefa.pdf" class="btn">Download Resume</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">ABOUT</h2>
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Thareefa profile photo">
+      <p>Hi, I'm <strong>M. Thareefa</strong>, a final year pursuing graduate from Vidyasagar College. I'm a Front-End Developer passionate about building clean UI using HTML, CSS, JavaScript, and React. I’m a quick learner with a strong interest in UI/UX and responsive design.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">PROJECTS</h2>
+    <div class="container">
+      <img src="assets/projects.jpg" alt="Portfolio project image">
+      <p><strong>Personal Portfolio Website</strong> — Developed using HTML and CSS as part of Nan Mudhalvan program. Showcases personal details, skills and project in a responsive layout. Demonstrates basic front-end development and design principles.</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2 class="section-title">CERTIFICATES</h2>
+    <div class="container">
+      <img src="assets/certificate.jpg" alt="Certificate image">
+      <p><strong>Front-End Web Development Certificate</strong> — Awarded by Nan Mudhalvan Program for completing training in HTML, CSS, and basic JavaScript with practical hands-on experience.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">CONTACT</h2>
+    <div class="container">
+      <p><i class="fas fa-phone contact-icon"></i>+91-8608646123</p>
+      <p><i class="fas fa-envelope contact-icon"></i>thareefamohamed08@gmail.com</p>
+      <p><i class="fab fa-github contact-icon"></i>github.com/thareefa-dev</p>
+    </div>
+  </section>
+</body>
+</html>
